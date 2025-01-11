@@ -5,12 +5,12 @@ namespace Looyall\Looyall\Models;
 use App\Domains\Shared\Models\Countries\Concerns\BelongsToCountry;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-abstract class User extends Authenticatable 
-{    
+abstract class User extends Authenticatable
+{
     use BelongsToCountry;
-    
+
     protected $connection = 'main';
-    
+
     protected $fillable = [
         'membership_id',
         'name',
@@ -36,7 +36,7 @@ abstract class User extends Authenticatable
         'flag_interact_business_banner',
         'flag_interact_business_welcome',
     ];
-    
+
     /**
      * The attributes that should be hidden for serialization.
      *
