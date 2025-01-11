@@ -2,9 +2,9 @@
 
 namespace Looyall\Looyall;
 
+use Looyall\Looyall\Commands\LooyallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Looyall\Looyall\Commands\LooyallCommand;
 
 class LooyallServiceProvider extends PackageServiceProvider
 {
