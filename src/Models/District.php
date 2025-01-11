@@ -7,13 +7,13 @@ use App\Domains\Shared\Models\States\Concerns\BelongsToState;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-abstract class District extends Model 
+abstract class District extends Model
 {
-    use HasFactory;
     use BelongsToCountry, BelongsToState;
+    use HasFactory;
 
     protected $connection = 'main';
-    
+
     protected $fillable = [
         'country_id',
         'state_id',

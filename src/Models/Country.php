@@ -5,9 +5,8 @@ namespace Looyall\Looyall\Models;
 use App\Domains\Shared\Models\States\Concerns\HasManyState;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 
-abstract class Country extends Model 
+abstract class Country extends Model
 {
     use HasFactory;
     use HasManyState;
